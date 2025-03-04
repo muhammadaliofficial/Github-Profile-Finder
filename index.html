@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Search and view GitHub user profiles" />
+    <meta name="keywords" content="GitHub, profiles, search, developers" />
+    <title>GitHub Profile Explorer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://github.com/favicon.ico" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1><i class="fab fa-github"></i> GitHub Profile Explorer</h1>
+    </header>
+
+    <main>
+      <form
+        id="form"
+        class="search-form"
+        role="search"
+        aria-label="Search GitHub users"
+      >
+        <div class="search-container">
+          <input
+            type="search"
+            id="search"
+            name="search"
+            autocomplete="off"
+            aria-label="Search GitHub users"
+            placeholder="Enter GitHub username..."
+            required
+          />
+        </div>
+      </form>
+
+      <div id="error" class="hidden"></div>
+
+      <div id="main"></div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
