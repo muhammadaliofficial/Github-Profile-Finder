@@ -1,1 +1,1 @@
-✅That is my JavaScript Project, which helps to quickly find the GitHub Profiles.
+✅ This is my JavaScript project, developed to help you quickly find GitHub profiles.
